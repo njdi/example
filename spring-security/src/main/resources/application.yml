@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://mysql_dev:13306/spring_security?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: spring_security
+    password: spring_security
+    hikari:
+      keepaliveTime: 30000
+      maxLifetime: 600000
+      maximumPoolSize: 30
