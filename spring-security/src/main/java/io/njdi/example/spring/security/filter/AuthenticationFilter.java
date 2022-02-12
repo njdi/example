@@ -57,6 +57,8 @@ public class AuthenticationFilter extends OncePerRequestFilter {
                     // 用户角色
                     userDetails.getAuthorities());
 
+    LOGGER.info("userDetails.getAuthorities(): {}", userDetails.getAuthorities());
+
     SecurityContext context =
             SecurityContextHolder.createEmptyContext();
     context.setAuthentication(token);

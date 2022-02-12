@@ -15,7 +15,9 @@
 
   <properties>
     <spring-boot.version>2.6.2</spring-boot.version>
+    <spring-security.version>5.6.1</spring-security.version>
     <mysql.version>8.0.27</mysql.version>
+    <ehcache.version>3.9.9</ehcache.version>
     <junit.version>4.13.2</junit.version>
 
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -57,9 +59,34 @@
       </dependency>
 
       <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-acl</artifactId>
+        <version>${spring-security.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-cache</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.ehcache</groupId>
+        <artifactId>ehcache</artifactId>
+        <version>${ehcache.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
         <version>${spring-boot.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-test</artifactId>
+        <version>${spring-security.version}</version>
         <scope>test</scope>
       </dependency>
 

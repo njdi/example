@@ -7,3 +7,8 @@ spring:
       keepaliveTime: 30000
       maxLifetime: 600000
       maximumPoolSize: 30
+
+logging:
+  level:
+    root: info
+    org.springframework.security: trace
