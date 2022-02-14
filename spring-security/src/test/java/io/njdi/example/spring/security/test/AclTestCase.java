@@ -44,7 +44,5 @@ public class AclTestCase {
     acl.insertAce(acl.getEntries().size(), permission, sid, true);
 
     aclService.updateAcl(acl);
-
-    System.out.println("insert finish");
   }
 }

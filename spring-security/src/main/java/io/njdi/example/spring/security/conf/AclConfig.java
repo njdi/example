@@ -62,7 +62,7 @@ public class AclConfig {
   @Bean
   public LookupStrategy createLookupStrategy() {
     BasicLookupStrategy basicLookupStrategy = new BasicLookupStrategy(dataSource, createAclCache(),
-            createAclAuthorizationStrategy(), createAuditLogger());
+            createAclAuthorizationStrategy(), createPermissionGrantingStrategy());
 
     basicLookupStrategy.setAclClassIdSupported(true);
 
